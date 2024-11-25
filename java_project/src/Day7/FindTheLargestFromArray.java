@@ -1,5 +1,7 @@
 package Day7;
 
+import java.util.Arrays;
+
 public class FindTheLargestFromArray {
 	
 	public static void main(String[] args) {
@@ -15,6 +17,9 @@ public class FindTheLargestFromArray {
 		System.out.println("Largest Number is : "+max);
 		
 		//Approach 2
+		Arrays.sort(arr);
+		int largest = arr[arr.length-1];
+		System.out.println("Largest Number is : "+largest);
 		
 	}
 
