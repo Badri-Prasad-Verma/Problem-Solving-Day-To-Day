@@ -8,18 +8,22 @@ public class FindTheLargestFromArray {
 		int[] arr= {10,76,34,10,86,65,34,89,65};
 		
 		//Approach 1
-		int max = arr[0];
+		int largest = arr[0];
 		for (int i = 0; i < arr.length-1; i++) {
-			if(arr[i]>max) {
-				max=arr[i];
+			if(arr[i]>largest) {
+				largest=arr[i];
 			}
 		}
-		System.out.println("Largest Number is : "+max);
+		System.out.println("Largest Number is : "+largest);
 		
 		//Approach 2
+        int largest1 = Arrays.stream(arr).max().orElseThrow(null);
+        System.out.println("Largest Number is : "+largest1);
+        
+		//Approach 3
 		Arrays.sort(arr);
-		int largest = arr[arr.length-1];
-		System.out.println("Largest Number is : "+largest);
+		int largest2 = arr[arr.length-1];
+		System.out.println("Largest Number is : "+largest2);
 		
 	}
 
