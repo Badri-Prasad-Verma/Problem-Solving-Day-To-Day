@@ -1,7 +1,6 @@
 package Day14;
 
 import java.util.Arrays;
-import java.util.stream.Collectors;
 
 public class AverageOfGivenArray {
 
